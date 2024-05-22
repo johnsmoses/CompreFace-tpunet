@@ -69,7 +69,7 @@ services:
       - PROXY_CONNECT_TIMEOUT=${connection_timeout:-10000}ms
 
   compreface-core:
-    image: ${registry}compreface-core:${CORE_VERSION}
+    image: bropat/compreface-core:1.2.0-facenet-tpu
     restart: always
     container_name: "compreface-core"
     environment:
